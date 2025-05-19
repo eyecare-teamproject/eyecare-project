@@ -1,0 +1,30 @@
+server:
+  port: 3306
+
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  security:
+    user:
+      name: test@naver.com
+      password: 1q2w3e4r!
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://eyecare-1.c3geco6a2ilk.ap-northeast-2.rds.amazonaws.com:3306/eyecare-1?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+#    username: admin
+#    password: SeeKeyT12#$
+#
+#  jpa:
+#    database: mysql
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        show_sql: true
+#    open-in-view: false
+
+mybatis:
+  mapper-locations:
+    - /mappers/*.xml
